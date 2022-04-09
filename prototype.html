@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Roy Yang">
+    <meta name="description" content="Workout Recommendations">
+    <link href='css/proposal.css' rel='stylesheet' />
+    <title>Workout Recommendations</title>
+</head>
+<body>
+  <header>
+    <h1>Workout Planning</h1>
+  </header>
+  <main>
+    <section id="menu-view">
+      <h2>Choose a difficulty:</h2>
+      <select>
+        <option value="Beginner">Beginner</option>
+        <option value="Standard" selected>Standard</option>
+        <option value="Expert">Expert</option>
+      </select>
+      <h2>Choose a body part to work on:</h2>
+      <p>
+        <label for="body_part_input">I want to work on: </label>
+        <input id="body_part_input" placeholder="leg" name="body_part">
+      </p>
+      <button id="search-btn">Search</button>
+    </section>
+    <section id="recommendation-view" class="hidden">
+      <div id="control-bar">
+        <button id="back-btn">Back to Menu</button>
+        <p>Results:</p>
+      </div>
+      <div id="video-board"></div>
+      <a href="https://www.youtube.com/watch?v=HVyt7ywsOQ8" target="_blank">
+        <img src="https://img.youtube.com/vi/HVyt7ywsOQ8/maxresdefault.jpg" alt="video cover">
+      </a>
+      <p>This video is retrived from<cite> Youtube, published by
+        <a href="https://www.youtube.com/channel/UCpQ34afVgk8cRQBjSJ1xuJQ"> MadFit</a></cite>.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
