@@ -4,6 +4,33 @@ main {
 h1, h2{
 text-align: center;
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.active {
+  background-color: #04AA6D;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
 
 /* Set a background color */
 body {
@@ -29,7 +56,7 @@ body {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: #003366;
+  background-color: #0099CC;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -174,7 +201,7 @@ html {
 .about-section {
   padding: 50px;
   text-align: center;
-  background-color: #CC3333;
+  background-color: #FF6666;
   color: white;
 }
 
