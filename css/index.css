@@ -1,9 +1,14 @@
+/*size the edge*/
 main {
   box-sizing: border-box;
 }
+
+/*place the header in the center*/
 h1, h2{
 text-align: center;
 }
+
+/*Nav Bar*/
 ul {
   list-style-type: none;
   margin: 0;
@@ -11,11 +16,11 @@ ul {
   overflow: hidden;
   background-color: #333;
 }
-
+/*Nav Bar*/
 li {
   float: left;
 }
-
+/*Nav Bar's color*/
 li a {
   display: block;
   color: white;
@@ -23,6 +28,7 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
+/*Nav Bar interaction*/
 .active {
   background-color: #04AA6D;
 }
@@ -181,44 +187,45 @@ body {
 html {
   box-sizing: border-box;
 }
-
+/*inherit the page size*/
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
+/*size of each colomn*/
 .column {
   float: left;
   width: 33.3%;
   margin-bottom: 16px;
   padding: 0 8px;
 }
-
+/*effect and size of card*/
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
 }
-
+/*The whole introduction section*/
 .about-section {
   padding: 50px;
   text-align: center;
   background-color: #FF6666;
   color: white;
 }
-
+/*The whole container*/
 .about-container {
   padding: 0 16px;
 }
-
+/*The way of how container dispaly*/
 .about-container::after, .row::after {
   content: "";
   clear: both;
   display: table;
 }
-
+/*Card title*/
 .title {
   color: grey;
 }
-
+/*Card button*/
 .button {
   border: none;
   outline: 0;
@@ -230,11 +237,11 @@ html {
   cursor: pointer;
   width: 100%;
 }
-
+/*Card button hover effect*/
 .button:hover {
   background-color: #555;
 }
-
+/*resize the screen*/
 @media screen and (max-width: 650px) {
   .column {
     width: 100%;
