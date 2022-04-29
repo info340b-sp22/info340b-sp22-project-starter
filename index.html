@@ -7,6 +7,7 @@
     <meta name="title" content="Chinese Theater Club">
     <link href='css/index.css' rel='stylesheet' />
     <link rel="icon" href="./img/headingSmall.jpg">
+    <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -48,12 +49,14 @@
           <div class="content">
             <h3>2019 WI</h3>
             <img src="img/history3.jpg" alt="club activity">
-            <p>General Meeting to get acquainted with everyone in CTC; Acting Workshops to continue
+            <p>General Meeting to get acquainted with everyone in CTC; <span id="dots">...</span>
+              <span id="more">Acting Workshops to continue
               to polish your acting skills; Light workshop to create a stage lighting wizard;
               Script Appreciation Workshop to teach you to read a good script; "Go to the theater
               together" theater friends offline activities, occasional good theater
-              recommendations.
+              recommendations.</span>
             </p>
+            <button onclick="seeMore()" id="moreBtn">Read more</button>
           </div>
         </div>
       </div>
