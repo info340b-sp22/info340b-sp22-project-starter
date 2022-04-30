@@ -1,3 +1,3 @@
-# INFO 340 Project
+# Chinese Theater Club Web page
 
-This repository contains code for an interactive information web app, created for the _Client-Side Web Development_ course at the UW iSchool.
+index.html: Home page for the web app.
