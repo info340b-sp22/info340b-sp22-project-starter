@@ -39,15 +39,18 @@ li a {
   margin-top: 1.5em;
 }
 
-.showmore .more, .showmore.show .dots {
+/* see more*/
+.showmore .more, .showmore.show .dots{
   display: none
 }
 
-.showmore.show .more {
+/* see more*/
+.showmore.show .more{
   display: inline
 }
 
-.showmore a {
+/* see more*/
+.showmore a{
   cursor: pointer;
   display: block;
   margin-top: 0.5em;
