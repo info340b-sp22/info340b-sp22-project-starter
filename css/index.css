@@ -295,4 +295,5 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
+  font-weight: bold;
 }
