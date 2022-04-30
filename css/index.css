@@ -9,7 +9,7 @@ text-align: center;
 }
 
 /*Nav Bar*/
-ul {
+nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -17,11 +17,12 @@ ul {
   background-color: #333;
 }
 /*Nav Bar*/
-li {
+nav a {
   float: left;
+  float:inline-start;
 }
 /*Nav Bar's color*/
-li a {
+nav a {
   display: block;
   color: white;
   text-align: center;
