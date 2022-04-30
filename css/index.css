@@ -19,10 +19,17 @@ nav {
 /*Nav Bar*/
 nav a {
   float: left;
-  float:inline-start;
 }
+
+/*search bar*/
+nav form {
+  float: right;
+  text-align: center;
+  padding: 12px 12px;
+}
+
 /*Nav Bar's color*/
-nav a {
+nav a{
   display: block;
   color: white;
   text-align: center;
