@@ -3,7 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import History from './History';
 import NavBar from './Navigation';
 import PlayGallery from './PlayGallery';
-import About from './About';
+import Chart from './Chart'
+import About from './About'
+
 
 
 function App() {
@@ -12,6 +14,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<History />} />
+        <Chart />
         <Route path='/PlayGallery' element={<PlayGallery />} />
         <Route path='/About' element={<About />} />
       </Routes>
