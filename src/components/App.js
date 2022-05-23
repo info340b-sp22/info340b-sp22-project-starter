@@ -8,7 +8,7 @@ import About from './About';
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <NavBar />
       <Routes>
         <Route path="/" element={<History />} />
