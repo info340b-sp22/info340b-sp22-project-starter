@@ -1,17 +1,12 @@
 import React from 'react';
 
 export default function History(props) {
+  let historyArr = props.content.map((ele) => <HistoryCard content={ele} key={ele.direction} />);
   return (
     <section>
     <h2>Club History</h2>
     <div className="timeline">
-      <div className="container left">
-        <div className="content">
-          <h3>2018.5</h3>
-          <img src="img/history1.jpg" alt="founders of the club" />
-          <p>Chinese Theater Club was born in the most beautiful time of the year.</p>
-        </div>
-      </div>
+      {historyArr}
       <div className="container right">
         <div className="content">
           <h3>2018 AU</h3>
@@ -83,21 +78,28 @@ export default function History(props) {
         </div>
       </div>
     </div>
-  </section>
+    </section>
   );
 }
 
 function HistoryCard(props) {
+  let {direction, date, img, alt, text} = props.content;
   return (
-
+    <div className={ direction } >
+      <div className="content">
+        <h3>{date}</h3>
+        <img src={img} alt={alt} />
+        <p>{text}</p>
+      </div>
+    </div>
   );
 }
 
-function toggleMore() {
+{/* function toggleMore() {
   document.querySelectorAll(".showmore").forEach(function (p) {
     p.querySelector("a").addEventListener("click", function () {
       p.classList.toggle("show");
       this.textContent = p.classList.contains("show") ? "Show Less" : "Show More";
     });
-  });
-}
+  }); */}
+// }
