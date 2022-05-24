@@ -7,16 +7,6 @@ export default function History(props) {
     <h2>Club History</h2>
     <div className="timeline">
       {historyArr}
-      <div className="container right">
-        <div className="content">
-          <h3>2018 AU</h3>
-          <img src="img/history2.jpg" alt="acting & sound Workshops" />
-          <p>Acting & Sound Workshops</p>
-          <p>Whether you are a first-time theater novice or an experienced theater veteran,
-            you can come to the club to learn about acting.
-          </p>
-        </div>
-      </div>
       <div className="container left">
         <div className="content">
           <h3>2019 WI</h3>
