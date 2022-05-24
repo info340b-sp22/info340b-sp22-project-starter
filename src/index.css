@@ -15,7 +15,9 @@
 }
 
 .read-or-hide{
-  color: rgb(192,192,192);
+  color: rgb(114, 45, 45);
+  font-size: 1.1em;
+  margin-left: 0.5em;
   cursor: pointer;
 }
 
@@ -64,31 +66,6 @@ nav a{
 /*Nav Bar interaction*/
 .active {
   background-color: #04AA6D;
-}
-
-/* see more*/
-.showmore {
-  font-size: 1.1em;
-  margin-top: 1.5em;
-}
-
-/* see more*/
-.showmore .more, .showmore.show .dots{
-  display: none
-}
-
-/* see more*/
-.showmore.show .more{
-  display: inline
-}
-
-/* see more*/
-.showmore a{
-  cursor: pointer;
-  display: block;
-  margin-top: 0.5em;
-  margin-bottom: 1em;
-  font-weight: bold;
 }
 
 /* Change the link color to #111 (black) on hover */
