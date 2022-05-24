@@ -7,7 +7,6 @@
   width: 100%;
 }
 
-
 /* read more buttons */
 .text{
   display: inline;
@@ -79,7 +78,7 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
-/* The actual timeline (the vertical ruler) */
+/* The actual timeline */
 .timeline {
   position: relative;
   max-width: 1200px;
@@ -93,7 +92,7 @@ body {
   height: auto;
 }
 
-/* The actual timeline (the vertical ruler) */
+/* The actual timeline */
 .timeline::after {
   content: '';
   position: absolute;
