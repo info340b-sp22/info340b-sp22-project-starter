@@ -23,7 +23,7 @@
 main {
   box-sizing: border-box;
 }
-/* hover selector*/
+
 a:hover {
   background-color: red;
 }
@@ -39,22 +39,22 @@ nav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: black;
+  background-color: gray;
 }
 /*Nav Bar*/
-nav a {
+div #link_Styles {
   float: left;
 }
 
 /*search bar*/
-nav form {
+div form {
   float: right;
   text-align: center;
   padding: 12px 12px;
 }
 
 /*Nav Bar's color*/
-nav a{
+div #link_Styles{
   display: block;
   color: white;
   text-align: center;
