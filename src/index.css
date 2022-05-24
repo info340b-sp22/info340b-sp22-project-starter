@@ -23,6 +23,10 @@
 main {
   box-sizing: border-box;
 }
+/* hover selector*/
+a:hover {
+  background-color: red;
+}
 
 /*place the header in the center*/
 h1, h2{
