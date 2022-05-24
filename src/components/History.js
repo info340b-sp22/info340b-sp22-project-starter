@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+// Readmore button implementation from https://www.geeksforgeeks.org/how-to-create-a-read-more-component-in-reactjs/
 const ReadMore = ({ children }) => {
   const text = children;
   const [isReadMore, setIsReadMore] = useState(true);
@@ -10,7 +11,7 @@ const ReadMore = ({ children }) => {
     <p className="text">
       {isReadMore ? text.slice(0, 50) : text}
       <span onClick={toggleReadMore} className="read-or-hide">
-        {isReadMore ? "...read more" : " show less"}
+        {isReadMore ? "Read More >>" : " Read Less <<"}
       </span>
     </p>
   );
@@ -33,10 +34,10 @@ export default function History(props) {
   let historyArr = props.content.map((ele) => <HistoryCard content={ele} key={ele.date} />);
   return (
     <section>
-    <h2>Club History</h2>
-    <div className="timeline">
-      {historyArr}
-    </div>
+      <h2>Club History</h2>
+      <div className="timeline">
+        {historyArr}
+      </div>
     </section>
   );
 }

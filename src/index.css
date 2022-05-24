@@ -1,3 +1,13 @@
+/* About page */
+#about-page h2 {
+  text-align: center;
+}
+
+.about-row img {
+  width: 100%;
+}
+
+
 /* read more buttons */
 .text{
   display: inline;
