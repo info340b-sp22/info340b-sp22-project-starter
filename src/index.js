@@ -5,6 +5,7 @@ import './index.css';
 import App from './components/App';
 import historyData from "./data/historyContent.json";
 import contactInfo from "./data/contact.json";
+import playsInfo from "./data/plays.json";
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -33,7 +34,7 @@ const analytics = getAnalytics(app);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter>
-        <App content={historyData} contact={contactInfo}/>
+        <App content={historyData} contact={contactInfo} plays={playsInfo}/>
     </BrowserRouter>
 );
 

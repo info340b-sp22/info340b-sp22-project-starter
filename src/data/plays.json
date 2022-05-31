@@ -1,6 +1,38 @@
 [
-    {"name":"Dog Heart" , "img":  "img/dogHeart.jpg", "alt":"Dog Heart play poster" },
-    {"name":"A Thousand Paper Cranes" , "img":  "img/bird.jpg", "alt":"Bird play poster"},
-    {"name":"Lost" , "img":  "img/lost.jpg", "alt": "Lost play"},
-    {"name":"The Long Goodbye" , "img":  "img/longGoodbye.jpg", "alt":"Mountains"}
+    {"cardAdd":"/PlayGallery/DogHeart" , "viewName":"dogheart" , "name":"Dog Heart" , "director":"Director: XieMin Pan", 
+    "link":"https://www.bilibili.com/video/BV1ZF411g7Dd?spm_id_from=333.337.search-card.all.click" ,
+    "img":  "img/dogHeart.jpg", "alt":"Dog Heart play poster",
+    "team":[
+        ["img/Dogheart/liuxu.jpg", "Xu Liu", "Professor Philip", "Xu Liu", "Xuliu@uw.com"],
+        ["img/Dogheart/yanqing.jpg", "YanQing", "Sharikov", "YanQing", "yanqing@uw.com"],
+        ["img/Dogheart/evan.jpg", "evan", "Dr. Evan", "Mia Li", "Mia@uw.com" ]
+    ]
+    },
+
+    {"cardAdd":"/PlayGallery/AThousandPaperCranes", "viewName":"athousandpapercranes","name":"A Thousand Paper Cranes" , "director":"Director: Leon", 
+    "link":"https://www.bilibili.com/video/BV1pa411v72g?spm_id_from=333.999.0.0" ,
+    "img":  "img/bird.jpg", "alt":"Bird play poster",
+    "team":[
+        ["img/bird/chenxi.jpg", "chenxi", "Chenxi Yu", "Shawna", "shawna@uw.com"],
+        ["img/bird/xiaoniao.jpg", "xiaoniao", "Xiaoniao Yu", "Serena", "serena@uw.com"]
+    ]
+    },
+
+    {"cardAdd":"/PlayGallery/Lost" ,"viewName":"lost", "name":"Lost" , "director":"Director: Kristin Hu", 
+    "link":"https://www.bilibili.com/video/BV1wL4y1V7eK?spm_id_from=333.999.0.0" ,
+    "img":  "img/lost.jpg", "alt":"Lost play poster",
+    "team":[
+        ["img/lost/fiona.jpg", "Fiona", "Amy", "Fiona", "fangyu@uw.com"],
+        ["img/lost/elvi.jpg", "Elvi", "Hanna", "Elvi", "elvi@uw.com"],
+        ["img/lost/mary.jpg", "Mary", "Mary", "Chloe", "chloe@uw.com" ]
+    ]
+    },
+
+    {"cardAdd":"/PlayGallery/ALongGoodbye" ,"viewName":"alonggoodbye", "name":"A Long Goodbye" , "director":"Director: Chenxu Song", 
+    "link":"https://www.bilibili.com/video/BV1aL411c73i?spm_id_from=333.999.0.0" ,
+    "img":  "img/longGoodbye.jpg", "alt":"The Long Goodbye",
+    "team":[
+        ["img/goodbye/elviGoodBye.jpg", "elvi", "Mrs. Roger", "Elvi", "elvi@uw.com"]
+    ]
+    }
 ]
