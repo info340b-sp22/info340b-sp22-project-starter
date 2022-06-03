@@ -210,6 +210,7 @@ html {
   background-color: #9A0D06;
   color: white;
 }
+
 /*The whole container*/
 .about-container {
   padding: 0 15px;
@@ -246,18 +247,23 @@ div.gallery {
   margin: 35px;
   border: 1px solid #ccc;
   float: left;
-  width: 180px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 17.9%;
+  width: 250px;
+  background-color: antiquewhite;
+  min-width: 200px;
+
 }
+
 
 div.gallery:hover {
   border: 1px solid #777;
 }
 
 div.gallery img {
-  width: 216px;
-  height:288px;
+  width: 200px;
+  height:260px;
+  min-width: 200px;
+  padding: auto;
 }
 
 div.desc {
@@ -265,6 +271,27 @@ div.desc {
   text-align: center;
   font-weight: bold;
 }
+
+.plays {
+  padding: 50px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  position:fixed;
+  bottom: 0;
+  left: 5px;
+}
+
+
+@media screen and (max-width: 420px) {
+  body {
+    visibility: hidden;
+  }
+};
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 
@@ -305,3 +332,43 @@ div.desc {
       left: 0%;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    /*resize the screen*/
+    .column {
+      width: 100%;
+      display: block;
+    }
+  
+    /* Place the timelime to the left */
+      .timeline::after {
+        left: 31px;
+      }
+  
+    /* Full-width containers */
+      .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+  
+    /* Make sure that all arrows are pointing leftwards */
+      .container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+      }
+  
+    /* Make sure all circles are at the same spot */
+      .left::after, .right::after {
+        left: 15px;
+      }
+  
+    /* Make all right containers behave like the left ones */
+      .right {
+        left: 0%;
+      }
+    }
+  
+  

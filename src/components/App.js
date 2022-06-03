@@ -14,7 +14,7 @@ export default function App(props) {
   // console.log(<Route path='/About' element={<About contact={props.contact}/>} />);
   // console.log("test")
   // console.log(<PlayGallery/>);
-  <PlayGallery/>
+  //<PlayGallery/>
   return (
     <div className="App">
       <NavBar />

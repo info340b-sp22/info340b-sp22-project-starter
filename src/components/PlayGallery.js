@@ -60,10 +60,8 @@ function GenButton(props) {
         return(
             <div className="gallery">
                     <NavLink to= {cardAdd}>
-                        <div>
                             <img src={img} alt={alt}/>
                             <p>{name}</p>
-                        </div>
                     </NavLink>
                 </div>
         );
@@ -94,7 +92,7 @@ function GenButton(props) {
     console.log(playCard[0]);
     // console.log(playRoutes);
     return (
-        <section>
+        <section className='plays'>
             {playButton}
             {/* <Routes>
                 {playRoutes}
