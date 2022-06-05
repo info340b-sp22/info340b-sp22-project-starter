@@ -18,6 +18,9 @@ const NavBar= () =>{
     <li>
       <Link id="link_Styles" to="/SearchBar">SearchBar</Link>
     </li>
+    <li>
+      <Link id="link_Styles" to="/Form">Form</Link>
+    </li>
     </nav>
   </div>
   );

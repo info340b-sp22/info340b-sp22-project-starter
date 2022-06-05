@@ -5,6 +5,7 @@ import NavBar from './Navigation';
 import PlayGallery from './PlayGallery';
 import About from './About';
 import SearchBar from './SearchBar';
+import Form from './Form';
 
 // import DogHeart from './plays/dogheart';
 // import Birds from './plays/birds';
@@ -28,6 +29,7 @@ export default function App(props) {
         <Route path="/" element={<History content={props.content}/>} />
         <Route path='/PlayGallery' element={<PlayGallery plays={props.plays}/>} />
         <Route path='/About' element={<About contact={props.contact}/>} />
+        <Route path='/Form' element={<Form />} />
         {/* <Route path="/PlayGallery/DogHeart" element={<card1/>} /> */}
         
         
