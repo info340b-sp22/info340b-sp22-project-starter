@@ -260,8 +260,8 @@ div.gallery:hover {
 }
 
 div.gallery img {
-  width: 200px;
-  height:260px;
+  width: 250px;
+  height:300px;
   min-width: 200px;
   padding: auto;
 }

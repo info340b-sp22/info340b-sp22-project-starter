@@ -34,7 +34,10 @@ export function SearchBar() {
           }
         </div>
       </div>
+      
+      
     </>
+    
   )
 }
 
