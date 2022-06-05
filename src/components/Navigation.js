@@ -15,6 +15,9 @@ const NavBar= () =>{
     <li>
       <Link id="link_Styles" to="/About">About</Link>
     </li>
+    <li>
+      <Link id="link_Styles" to="/SearchBar">SearchBar</Link>
+    </li>
     </nav>
   </div>
   );

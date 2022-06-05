@@ -4,6 +4,8 @@ import History from './History';
 import NavBar from './Navigation';
 import PlayGallery from './PlayGallery';
 import About from './About';
+import SearchBar from './SearchBar';
+
 // import DogHeart from './plays/dogheart';
 // import Birds from './plays/birds';
 // import Lost from './plays/lost';
@@ -22,6 +24,7 @@ export default function App(props) {
         <h1>Chinese Theater Club</h1>
       </header>
       <Routes>
+        <Route path="/SearchBar" element={<SearchBar content={props.plays}/>} />
         <Route path="/" element={<History content={props.content}/>} />
         <Route path='/PlayGallery' element={<PlayGallery plays={props.plays}/>} />
         <Route path='/About' element={<About contact={props.contact}/>} />

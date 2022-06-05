@@ -91,6 +91,8 @@ function GenButton(props) {
     // console.log("playRoutes");
     console.log(playCard[0]);
     // console.log(playRoutes);
+
+    
     return (
         <section className='plays'>
             {playButton}
