@@ -79,16 +79,16 @@ return (
 
 <form>
 {/* Labels and inputs for form data */}
-<label className="label">Name</label>
-<input onChange={handleName} className="input"
+<label className="label1">Name</label>
+<input onChange={handleName} className="input1"
 value={name} type="text" />
 
-<label className="label">Email</label>
-<input onChange={handleEmail} className="input"
+<label className="label2">Email</label>
+<input onChange={handleEmail} className="input2"
 value={email} type="email" />
 
-<label className="label">Password</label>
-<input onChange={handlePassword} className="input"
+<label className="label3">Password</label>
+<input onChange={handlePassword} className="input3"
 value={password} type="password" />
 
 <button onClick={handleSubmit} className="btn" type="submit">

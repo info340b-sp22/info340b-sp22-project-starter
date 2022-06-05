@@ -380,15 +380,45 @@ footer {
       font-size: larger;
       color: white;
       padding: 5px;
-      left: -14cm;
       }
-      
-      .input, .label, .btn{
-        font-size: larger;
-        padding: 5px;
-        margin: 2px;
-        position: relative;
-        left: -14cm;
+
+      .label1{
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+      }
+      .input1{
+        size: 100cm;
+        position: fixed;
+        top: 42%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .label2{
+        position: fixed;
+        top: 44%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .input2{
+        position: fixed;
+        top: 46%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .label3{
+        position: fixed;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .input3{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
       .btn{
       color: white;
@@ -398,6 +428,10 @@ footer {
       display: block;
       padding: 5px;
       margin: 10px auto;
+      position: fixed;
+      top: 52%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       
       }
       
