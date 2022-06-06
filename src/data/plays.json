@@ -3,9 +3,9 @@
     "link":"https://www.bilibili.com/video/BV1ZF411g7Dd?spm_id_from=333.337.search-card.all.click" ,
     "img":  "img/dogHeart.jpg", "alt":"Dog Heart play poster",
     "team":[
-        {"img": "img/Dogheart/liuxu.jpg", "role": "Professor Philip", "name": "Xu Liu", "email": "Xuliu@uw.com"},
-        {"img": "img/Dogheart/yanqing.jpg", "role": "Sharikov", "name": "YanQing", "email": "yanqing@uw.com"},
-        {"img": "img/Dogheart/evan.jpg","role": "Dr. Evan", "name": "Mia Li", "email": "Mia@uw.com" }
+        {"img": "https://mmbiz.qpic.cn/mmbiz_jpg/SArXhiaUHcdZqW6pLOvdP3O9Uk7x6PfuTibxTll9dxrJOyXka6Ge516DacEAc36QcVSW2kHw8sicbq2ok8g1I9xkQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1", "role": "Professor Philip", "name": "Xu Liu", "email": "Xuliu@uw.com"},
+        {"img": "https://mmbiz.qpic.cn/mmbiz_jpg/SArXhiaUHcdZqW6pLOvdP3O9Uk7x6PfuTuHbH7lWmKLZDcBvw51yYQIzFtbtEJiaP14jspce1PtcK4WdQsj6JAmQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1", "role": "Sharikov", "name": "YanQing", "email": "yanqing@uw.com"},
+        {"img": "https://mmbiz.qpic.cn/mmbiz_jpg/SArXhiaUHcdZqW6pLOvdP3O9Uk7x6PfuTUK1Yiaplct8TPiatcFkbTiadQTuU75WWHibT2BjkepwOEKNAaKR6GngDFw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1","role": "Dr. Evan", "name": "Mia Li", "email": "Mia@uw.com" }
     ]
     },
 
