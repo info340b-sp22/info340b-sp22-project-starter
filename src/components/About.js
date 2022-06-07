@@ -3,15 +3,15 @@ import React from 'react';
 function ContactCard(props) {
   let {name, motto, img, email, title} = props.contact;
   return (
-    <div class="column">
-      <div class="card">
+    <div className="column">
+      <div className="card">
         <img src={img} alt={name} />
-        <div class="about-container">
+        <div className="about-container">
           <h2>{name}</h2>
-          <p class="title">{title}</p>
+          <p className="title">{title}</p>
           <p>{motto}</p>
           <p>{email}</p>
-          <p><button class="button">Contact</button></p>
+          <p><button className="button">Contact</button></p>
         </div>
       </div>
     </div>
@@ -21,8 +21,8 @@ function ContactCard(props) {
 export default function About(props) {
   let contactArr = props.contact.map((ele) => <ContactCard contact={ele} key={ele.name} />);
   return (
-    <section class="about-body">
-      <div class="about-section">
+    <section className="about-body">
+      <div className="about-section">
         <h1>Who Are We?</h1>
         <p>- We Establishment at May 2018</p>
         <p>- First Chinese student drama club in the Northwest</p>
@@ -34,7 +34,7 @@ export default function About(props) {
       </div>
 
       <h2>Our Team</h2>
-      <div class="about-row">
+      <div className="about-row">
         {contactArr}
       </div>
     </section>
