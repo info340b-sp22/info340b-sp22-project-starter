@@ -4,10 +4,11 @@ import Button from '@mui/material/Button';
 import * as React from 'react';
 import LikeButton from './LikeButton';
 
-import PLAY_DATA from '../data/plays.json';
+import PLAY_DATA from '../../data/plays.json';
 
 export default function PlayDetail(props) {
   let { playName } = useParams();
+  console.log(props);
   const playNameString = playName;
   let play =  _.find(PLAY_DATA, {viewName: playNameString}); //find play in data
 

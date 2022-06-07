@@ -3,9 +3,9 @@ import History from './History';
 import NavBar from './Navigation';
 import About from './About';
 import Form from './Form';
-import PlayList from './PlayList';
-import PlayDetail from './PlayDetail';
-import PlayPage from './PlayPage';
+import PlayList from './PlayGallery/PlayList';
+import PlayDetail from './PlayGallery/PlayDetail';
+import PlayPage from './PlayGallery/PlayPage';
 
 
 export default function App(props) {
