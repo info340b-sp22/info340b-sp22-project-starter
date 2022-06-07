@@ -322,6 +322,100 @@ footer {
 	    border-radius: 8px;
 }
 
+/*signUp*/
+
+
+.label{
+  display: block;
+  font-size: larger;
+  color: white;
+  padding: 5px;
+  }
+
+.labelName{
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+
+}
+.inputName{
+  size: 100cm;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+}
+.labelEmail{
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+}
+.inputEmail{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+}
+.labelPassword{
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+}
+.inputPassword{
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+}
+.btn{
+color: white;
+background-color: red;
+border-radius: 5px;
+font-size: larger;
+display: block;
+padding: 5px;
+margin: 10px auto;
+position: fixed;
+top: 65%;
+left: 50%;
+transform: translate(-50%, -50%);
+margin: auto;
+
+}
+
+.messages{
+display: flex;
+justify-content: center;
+
+}
+
+.error{
+display: block;
+background-color: red;
+color: white;
+width: fit-content;
+height: 50px;
+padding: 5px;
+}
+
+.success{
+display: block;
+background-color: lightblue;
+color: black;
+width: fit-content;
+height: 50px;
+padding: 5px;
+}
+
 
 @media screen and (max-width: 324px) {
   body {
@@ -421,101 +515,3 @@ footer {
         left: 0%;
       }
     }
-
-    /*signUp*/
-
-
-      .label{
-      display: block;
-      font-size: larger;
-      color: white;
-      padding: 5px;
-      }
-
-      .label1{
-        position: fixed;
-        top: 35%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin: auto;
-
-      }
-      .input1{
-        size: 100cm;
-        position: fixed;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin: auto;
-      }
-      .label2{
-        position: fixed;
-        top: 45%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin: auto;
-      }
-      .input2{
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin: auto;
-      }
-      .label3{
-        position: fixed;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin: auto;
-      }
-      .input3{
-        position: fixed;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin: auto;
-      }
-      .btn{
-      color: white;
-      background-color: red;
-      border-radius: 5px;
-      font-size: larger;
-      display: block;
-      padding: 5px;
-      margin: 10px auto;
-      position: fixed;
-      top: 65%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      margin: auto;
-
-      }
-
-      .messages{
-      display: flex;
-      justify-content: center;
-
-      }
-
-      .error{
-      display: block;
-      background-color: red;
-      color: white;
-      width: fit-content;
-      height: 50px;
-      padding: 5px;
-      }
-
-      .success{
-      display: block;
-      background-color: lightblue;
-      color: black;
-      width: fit-content;
-      height: 50px;
-      padding: 5px;
-      }
-
-
-
-
