@@ -3,14 +3,17 @@ h1 {
   font-size: 2.25rem;
 }
 
-.about-row img {
+h1, h2, div form, div #link_Styles, .about-section, .button, div.desc, .plays {
+  text-align: center;
+}
+
+.about-row img, .text, nav, .timeline img, .button, .plays {
   width: 100%;
 }
 
 /* read more buttons */
 .text{
   display: inline;
-  width: 100%;
 }
 
 .read-or-hide{
@@ -35,7 +38,6 @@ a:hover {
 /*place the header in the center*/
 h1, h2{
   font-family: Roboto, sans-serif;
-  text-align: center;
   margin-top: 0;
   margin-bottom: 0.5rem;
   line-height: 1.2;
@@ -45,7 +47,6 @@ h1, h2{
 
 /*Nav Bar*/
 nav {
-  width: 100%;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -60,7 +61,6 @@ div #link_Styles {
 /*search bar*/
 div form {
   float: right;
-  text-align: center;
   padding: 12px 12px;
 }
 
@@ -68,7 +68,6 @@ div form {
 div #link_Styles{
   display: block;
   color: white;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
@@ -99,7 +98,6 @@ body {
 /* Timeline img size control */
 .timeline img {
   border-radius: 8px;
-  width: 100%;
   height: auto;
 }
 
@@ -218,7 +216,6 @@ html {
 /*The whole introduction section*/
 .about-section {
   padding: 50px;
-  text-align: center;
   background-color: #9A0D06;
   color: white;
 }
@@ -245,9 +242,7 @@ html {
   padding: 8px;
   color: white;
   background-color: #000;
-  text-align: center;
   cursor: pointer;
-  width: 100%;
 }
 /*Card button hover effect*/
 .button:hover {
@@ -280,15 +275,12 @@ div.gallery img {
 
 div.desc {
   padding: 15px;
-  text-align: center;
   font-weight: bold;
 }
 
 .plays {
   padding: 1em;
-  text-align: center;
   color: white;
-  width: 100%;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -421,9 +413,12 @@ padding: 5px;
 /* Media queries - Responsive timeline on screens less than 600px wide */
 
 @media screen and (max-width: 600px) {
+  .column, .container {
+    width: 100%;
+  }
+
   /*resize the screen*/
   .column {
-    width: 100%;
     display: block;
   }
 
@@ -434,7 +429,6 @@ padding: 5px;
 
   /* Full-width containers */
     .container {
-      width: 100%;
       padding-left: 70px;
       padding-right: 25px;
     }
@@ -472,8 +466,11 @@ padding: 5px;
     }
 
     /*resize the screen*/
-    .column {
+    .column, .container {
       width: 100%;
+    }
+
+    .column {
       display: block;
     }
 
@@ -487,7 +484,6 @@ padding: 5px;
 
     /* Full-width containers */
       .container {
-        width: 100%;
         padding-left: 70px;
         padding-right: 25px;
       }
