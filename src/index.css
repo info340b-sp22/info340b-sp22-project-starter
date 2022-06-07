@@ -301,6 +301,22 @@ footer {
   left: 5px;
 }
 
+.like-button {
+      font-size: 1rem;
+      padding: 5px 10px;
+      color:  #fff;
+      background-color: #222f3e;
+	    box-shadow: 0 0 10px #22303f8c;
+	    border-radius: 8px;
+}
+
+.liked {
+      font-weight: bold;
+      color:  #fff;
+      background-color: #54a0ff;
+	    box-shadow: 0 0 10px #22303f8c;
+	    border-radius: 8px;
+}
 
 
 @media screen and (max-width: 420px) {
@@ -399,7 +415,7 @@ footer {
 
       .label1{
         position: fixed;
-        top: 40%;
+        top: 35%;
         left: 50%;
         transform: translate(-50%, -50%);
 
@@ -407,31 +423,31 @@ footer {
       .input1{
         size: 100cm;
         position: fixed;
-        top: 42%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
       .label2{
         position: fixed;
-        top: 44%;
+        top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
       .input2{
         position: fixed;
-        top: 46%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
       .label3{
         position: fixed;
-        top: 48%;
+        top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
       .input3{
         position: fixed;
-        top: 50%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
@@ -444,7 +460,7 @@ footer {
       padding: 5px;
       margin: 10px auto;
       position: fixed;
-      top: 52%;
+      top: 65%;
       left: 50%;
       transform: translate(-50%, -50%);
 

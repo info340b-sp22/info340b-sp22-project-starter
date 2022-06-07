@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import _ from 'lodash';
 import Button from '@mui/material/Button';
 import * as React from 'react';
+import LikeButton from './LikeButton';
 
 import PLAY_DATA from '../data/plays.json';
 
@@ -47,6 +48,7 @@ function GenActor(props) {
             <p className="title">Featured by</p>
             <p>{name}</p>
             <p>{email}</p>
+            <LikeButton/>
           </div>
         </div>
       </div>
