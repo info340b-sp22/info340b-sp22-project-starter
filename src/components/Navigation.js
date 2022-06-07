@@ -7,16 +7,16 @@ const NavBar= () =>{
   <div>
     <nav>
       <li>
-        <Link id="link_Styles" to="/History">History</Link>
+        <Link id="link_Styles" to="/History">Club History</Link>
       </li>
       <li>
-        <Link id="link_Styles" to="/PlayPage">PlayPage</Link>
+        <Link id="link_Styles" to="/PlayPage">Play Gallery</Link>
       </li>
       <li>
-        <Link id="link_Styles" to="/About">About</Link>
+        <Link id="link_Styles" to="/About">About Us</Link>
       </li>
       <li>
-        <Link id="link_Styles" to="/Form">Form</Link>
+        <Link id="link_Styles" to="/Form">Registration</Link>
       </li>
     </nav>
   </div>

@@ -16,9 +16,11 @@ export default function PlayList(props) {
             props.plays
               .filter((val) => {
                 if(searchTerm === ""){
-                  return val;
+                  return true;
                 }else if(val.name.toLowerCase().includes(searchTerm.toLowerCase())){
-                  return val;
+                  return true;
+                }else {
+                  return false;
                 }
               })
               .map((val) => <GenButton plays={val} key={val.name}/>)
