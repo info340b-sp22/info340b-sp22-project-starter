@@ -9,14 +9,14 @@ const LikeButton = () => {
     };
 
   return (
-    <>
+    <div>
       <button
         className={"like-button " + (isLike ? "liked" : "")}
         onClick={onLikeButtonClick}
       >
         {"Like"} | {like}
       </button>
-    </>
+    </div>
   );
 };
 
