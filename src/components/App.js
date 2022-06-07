@@ -17,7 +17,6 @@ export default function App(props) {
         <h1>Chinese Theater Club</h1>
       </header>
       <Routes>
-        <Route path="/SearchBar" element={<SearchBar content={props.plays}/>} />
         <Route path="/History" element={<History content={props.content}/>} />
         <Route path="/PlayPage" element={<PlayPage />} >
           <Route path=":playName" element={<PlayDetail />}/>

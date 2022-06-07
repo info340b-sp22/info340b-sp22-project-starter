@@ -10,14 +10,10 @@ const NavBar= () =>{
         <Link id="link_Styles" to="/History">History</Link>
       </li>
       <li>
-        {/* <Link id="link_Styles" to="/PlayGallery">PlayGallery</Link> */}
         <Link id="link_Styles" to="/PlayPage">PlayPage</Link>
       </li>
       <li>
         <Link id="link_Styles" to="/About">About</Link>
-      </li>
-      <li>
-        <Link id="link_Styles" to="/SearchBar">SearchBar</Link>
       </li>
       <li>
         <Link id="link_Styles" to="/Form">Form</Link>

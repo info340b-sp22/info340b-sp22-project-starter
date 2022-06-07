@@ -1,9 +1,8 @@
 import React, {useState} from "react";
-import data from "../data/TemplateData.json";
-import {Routes, Route, NavLink } from "react-router-dom";
 
-export function SearchBar() {
+export function SearchBar(props) {
   const [searchTerm, setSearchTerm] = useState("");
+  let plays = props.plays;
   return (
     <>
       <div className="card">
@@ -14,7 +13,7 @@ export function SearchBar() {
         </div>
         <div>
           {
-            data 
+            plays
               .filter((val) => {
                 if(searchTerm == ""){
                   return val;
@@ -28,16 +27,13 @@ export function SearchBar() {
                       <img src={val.image} alt="" />
                       <h3>{val.title}</h3>
                       <p className="director">{val.director}</p>
-                  </div> 
+                  </div>
                 )
               })
           }
         </div>
       </div>
-      
-      
     </>
-    
   )
 }
 

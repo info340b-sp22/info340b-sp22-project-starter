@@ -1,14 +1,29 @@
-import React from 'react'; //import React Component
+import React, {useState} from 'react'; //import React Component
 import { Link } from 'react-router-dom';
 import LikeButton from './LikeButton';
 
-
 export default function PlayList(props) {
-  let playButton = props.plays.map((play) => <GenButton plays={play} key={play.name}/>);
-
+  const [searchTerm, setSearchTerm] = useState("");
   return (
     <section className='plays'>
-      {playButton}
+      <div className="searchInput_Container">
+        <input id="searchInput" type="text" placeholder="Search here..." onChange={(event) => {
+          setSearchTerm(event.target.value);
+        }}/>
+      </div>
+      <div>
+          {
+            props.plays
+              .filter((val) => {
+                if(searchTerm === ""){
+                  return val;
+                }else if(val.name.toLowerCase().includes(searchTerm.toLowerCase())){
+                  return val;
+                }
+              })
+              .map((val) => <GenButton plays={val} key={val.name}/>)
+          }
+        </div>
     </section>
   );
 }
