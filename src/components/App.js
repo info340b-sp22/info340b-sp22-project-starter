@@ -2,7 +2,6 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import History from './History';
 import NavBar from './Navigation';
 import About from './About';
-import SearchBar from './SearchBar';
 import Form from './Form';
 import PlayList from './PlayList';
 import PlayDetail from './PlayDetail';
