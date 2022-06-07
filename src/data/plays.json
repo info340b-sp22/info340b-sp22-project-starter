@@ -1,18 +1,18 @@
 [
     {"viewName":"dogheart" , "name":"Dog Heart" , "director":"Director: XieMin Pan",
     "link":"https://www.bilibili.com/video/BV1ZF411g7Dd?spm_id_from=333.337.search-card.all.click" ,
-    "img":  "img/dogHeart.jpg", "alt":"Dog Heart play poster",
+    "img":  "img/cover/dogHeart.jpg", "alt":"Dog Heart play poster",
     "team":[
 
-        {"img": "../img/Dogheart/liuxu.jpg", "role": "Professor Philip", "name": "Xu Liu", "email": "Xuliu@uw.com"},
-        {"img": "../img/Dogheart/yanqing.jpg", "role": "Sharikov", "name": "YanQing", "email": "yanqing@uw.com"},
-        {"img": "../img/Dogheart/evan.jpg","role": "Dr. Evan", "name": "Mia Li", "email": "Mia@uw.com" }
+        {"img": "../img/dogHeart/liuxu.jpg", "role": "Professor Philip", "name": "Xu Liu", "email": "Xuliu@uw.com"},
+        {"img": "../img/dogHeart/yanqing.jpg", "role": "Sharikov", "name": "Yan Qing", "email": "yanqing@uw.com"},
+        {"img": "../img/dogHeart/evan.jpg","role": "Dr. Evan", "name": "Mia Li", "email": "Mia@uw.com" }
     ]
     },
 
     {"viewName":"athousandpapercranes","name":"A Thousand Paper Cranes" , "director":"Director: Leon",
     "link":"https://www.bilibili.com/video/BV1pa411v72g?spm_id_from=333.999.0.0" ,
-    "img":  "img/bird.jpg", "alt":"Bird play poster",
+    "img":  "img/cover/bird.jpg", "alt":"Bird play poster",
     "team":[
         {"img": "../img/bird/chenxi.jpg", "role": "Chenxi Yu", "name": "Shawna", "email": "shawna@uw.com"},
         {"img": "../img/bird/xiaoniao.jpg", "role": "Xiaoniao Yu", "name": "Serena", "email": "serena@uw.com"}
@@ -21,7 +21,7 @@
 
     {"viewName":"lost", "name":"Lost" , "director":"Director: Kristin Hu",
     "link":"https://www.bilibili.com/video/BV1wL4y1V7eK?spm_id_from=333.999.0.0" ,
-    "img":  "img/lost.jpg", "alt":"Lost play poster",
+    "img":  "img/cover/lost.jpg", "alt":"Lost play poster",
     "team":[
         {"img": "../img/lost/fiona.jpg", "role": "Amy", "name": "Fiona", "email": "fangyu@uw.com"},
         {"img": "../img/lost/elvi.jpg", "role": "Hanna", "name": "Elvi", "email": "elvi@uw.com"},
@@ -31,7 +31,7 @@
 
     {"viewName":"alonggoodbye", "name":"A Long Goodbye" , "director":"Director: Chenxu Song",
     "link":"https://www.bilibili.com/video/BV1aL411c73i?spm_id_from=333.999.0.0" ,
-    "img":  "../img/longGoodbye.jpg", "alt":"The Long Goodbye",
+    "img":  "img/cover/longGoodbye.jpg", "alt":"The Long Goodbye",
     "team":[
         {"img": "../img/goodbye/elviGoodBye.jpg", "role": "Mrs. Roger", "name": "Elvi", "email": "elvi@uw.com"}
     ]
