@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-
+//navigation bar for user to go different pages.
 const NavBar= () =>{
   return (
     <div>

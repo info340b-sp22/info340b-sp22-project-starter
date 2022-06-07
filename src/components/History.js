@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 // Readmore button implementation from https://www.geeksforgeeks.org/how-to-create-a-read-more-component-in-reactjs/
+//a function that hide excessive words in each history card and displays them when user needed.
 const ReadMore = ({ children }) => {
   const text = children;
   const [isReadMore, setIsReadMore] = useState(true);
@@ -16,6 +17,7 @@ const ReadMore = ({ children }) => {
     </p>
   );
 };
+
 
 function HistoryCard(props) {
   let {direction, date, img, alt, text} = props.content;

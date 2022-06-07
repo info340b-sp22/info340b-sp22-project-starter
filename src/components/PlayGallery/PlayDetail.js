@@ -5,6 +5,8 @@ import * as React from 'react';
 import LikeButton from './LikeButton';
 import PLAY_DATA from '../../data/plays.json';
 
+
+//This function reads data from "plays.json" to generate play page for each play 
 export default function PlayDetail(props) {
   let { playName } = useParams();
   console.log(props);
@@ -36,8 +38,9 @@ export default function PlayDetail(props) {
   );
 }
 
+//a helper method that generates actor information needed by play pages. 
 function GenActor(props) {
-  let actors = props.teamInfo.map(function(actor){
+  let actors = props.teamInfo.map(function(actor){ 
     let {img, role, name, email} = actor;
     return(
       <div className="column" key={name}>
