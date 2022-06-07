@@ -1,25 +1,25 @@
 [
     {
         "id": 1,
-        "image": "https://mmbiz.qpic.cn/mmbiz_png/SArXhiaUHcdYibIn5eosVcV7nic4dThtNwIOl1zPCX1kvf6xPibpsDiapzlwpicJSJ1YeQ4IibmYUNXt6iaNWnGRn6Cbrw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1",
-        "title": " Peach Blossom",
+        "image": "../img/longGoodbye.jpg",
+        "title": "Long Goodbye",
         "director": "Director: Xiaochen Ding"
     },
     {
         "id": 2,
-        "image": "https://mmbiz.qpic.cn/mmbiz_png/SArXhiaUHcdZFH6bLb3ic57XcbBVKHGrlkG0SmStpSPdKkbdmtKPGgy66n0FWQaMBTqlib98D0rPlM3Fg5WPhxzyA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1",
+        "image": "img/lost.jpg",
         "title": "Lost",
         "director": "Director: Kristin"
     },
     {
         "id": 3,
-        "image": "https://mmbiz.qpic.cn/mmbiz_png/SArXhiaUHcdZFH6bLb3ic57XcbBVKHGrlksebAExYBZptbsIt5MDXfE7bGq70Bn5zIm8ekbawedPgJRtic6gjF1qw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1",
+        "image": "img/bird.jpg",
         "title": "Bird",
         "director": "Director: Leon"
     },
     {
         "id": 4,
-        "image": "https://mmbiz.qpic.cn/mmbiz_png/SArXhiaUHcdZqW6pLOvdP3O9Uk7x6PfuTTXtb2YjwjCp1eoHEiaNoicBslXgKE0ANth35EM0X9gacrwZCn79EIU1Q/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1",
+        "image":  "img/dogHeart.jpg",
         "title": "Dog Heart",
         "director": "Director: Margaret"
     }

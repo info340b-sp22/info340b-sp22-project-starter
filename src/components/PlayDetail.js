@@ -1,6 +1,7 @@
-import React from 'react';
 import { useParams } from 'react-router-dom';
 import _ from 'lodash';
+import Button from '@mui/material/Button';
+import * as React from 'react';
 
 import PLAY_DATA from '../data/plays.json';
 
@@ -19,9 +20,9 @@ export default function PlayDetail(props) {
             <h1>{play.name}</h1>
             <h2>{play.director}</h2>
             <a target="_blank" rel="noreferrer noopener" href={play.link}>
-              <button>
+              <Button variant="contained">
                   Click Here For Entire Show
-              </button>
+              </Button>
             </a>
           </div>
           <h2>Our Team</h2>
