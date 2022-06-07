@@ -34,7 +34,7 @@ export default function Form() {
     e.preventDefault();
     if (name === '' || email === '' || password === '') {
       setError(true);
-      } else {
+    } else {
       setSubmitted(true);
       setError(false);
     }
@@ -55,9 +55,9 @@ export default function Form() {
   const errorMessage = () => {
     return (
       <div
-      className="error"
-      style={{display: error ? '' : 'none'}}>
-      <h1>Please enter all the fields</h1>
+        className="error"
+        style={{display: error ? '' : 'none'}}>
+        <h1>Please enter all the fields</h1>
       </div>
     );
   };
@@ -90,6 +90,6 @@ export default function Form() {
         Submit
         </button>
       </form>
-</div>
+    </div>
 );
 }
