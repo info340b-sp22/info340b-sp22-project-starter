@@ -3,7 +3,6 @@ import _ from 'lodash';
 import Button from '@mui/material/Button';
 import * as React from 'react';
 import LikeButton from './LikeButton';
-
 import PLAY_DATA from '../../data/plays.json';
 
 export default function PlayDetail(props) {
