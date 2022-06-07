@@ -1,3 +1,8 @@
+/* headings */
+h1 {
+  font-size: 2.25rem;
+}
+
 /* About page */
 #about-page h2 {
   text-align: center;
@@ -14,10 +19,13 @@
 }
 
 .read-or-hide{
-  color: rgb(114, 45, 45);
+  /* color: rgb(114, 45, 45); */
+  color: #ffffff;
+  background-color: rgb(114, 45, 45);
   font-size: 1.1em;
   margin-left: 0.5em;
   cursor: pointer;
+  font-weight: 700;
 }
 
 /*size the edge*/
@@ -31,7 +39,13 @@ a:hover {
 
 /*place the header in the center*/
 h1, h2{
-text-align: center;
+  font-family: Roboto,sans-serif;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  font-weight: 500;
+  color: inherit;
 }
 
 /*Nav Bar*/
@@ -186,6 +200,7 @@ body {
 html {
   box-sizing: border-box;
 }
+
 /*inherit the page size*/
 *, *:before, *:after {
   box-sizing: inherit;
@@ -340,19 +355,19 @@ footer {
       width: 100%;
       display: block;
     }
-  
+
     /* Place the timelime to the left */
       .timeline::after {
         left: 31px;
       }
-  
+
     /* Full-width containers */
       .container {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
       }
-  
+
     /* Make sure that all arrows are pointing leftwards */
       .container::before {
         left: 60px;
@@ -360,12 +375,12 @@ footer {
         border-width: 10px 10px 10px 0;
         border-color: transparent white transparent transparent;
       }
-  
+
     /* Make sure all circles are at the same spot */
       .left::after, .right::after {
         left: 15px;
       }
-  
+
     /* Make all right containers behave like the left ones */
       .right {
         left: 0%;
@@ -374,7 +389,7 @@ footer {
 
     /*signUp*/
 
-      
+
       .label{
       display: block;
       font-size: larger;
@@ -387,7 +402,7 @@ footer {
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
-        
+
       }
       .input1{
         size: 100cm;
@@ -432,15 +447,15 @@ footer {
       top: 52%;
       left: 50%;
       transform: translate(-50%, -50%);
-      
+
       }
-      
+
       .messages{
       display: flex;
       justify-content: center;
-      
+
       }
-      
+
       .error{
       display: block;
       background-color: red;
@@ -449,7 +464,7 @@ footer {
       height: 50px;
       padding: 5px;
       }
-      
+
       .success{
       display: block;
       background-color: lightblue;
@@ -459,6 +474,6 @@ footer {
       padding: 5px;
       }
 
-    
-    
-  
+
+
+
