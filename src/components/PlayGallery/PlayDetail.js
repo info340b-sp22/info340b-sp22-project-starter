@@ -1,40 +1,67 @@
-import { useParams } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router';
 import _ from 'lodash';
 import Button from '@mui/material/Button';
-import React from 'react';
 import LikeButton from './LikeButton';
-import PLAY_DATA from '../../data/plays.json';
 
+const PLAY_DATA = '../../plays.json'
 
-//This function reads data from "plays.json" to generate play page for each play
-export default function PlayDetail(props) {
-  let { playName } = useParams();
-  const playNameString = playName;
-  let play =  _.find(PLAY_DATA, {viewName: playNameString}); //find play in data
+//This function fetches data from "plays.json" to generate play page for each play
+export default function Resources() {
+  const [playData, setPlayData] = useState({'viewName': '', 'team':[]}); //tracks to show
+  const [alertMessage, setAlertMessage] = useState(null);
 
-  if(!play) return <h2>No play specified</h2> //if unspecified
+  const { playName } = useParams();
 
-  return (
-    <div>
-      <section>
-        <div className="about-body">
-          <div className="about-section">
-            <h1>{play.name}</h1>
-            <h2>{play.director}</h2>
-            <a target="_blank" rel="noreferrer noopener" href={play.link}>
-              <Button variant="contained">
-                  Click Here For Entire Show
-              </Button>
-            </a>
-          </div>
-          <h2>Our Team</h2>
-          <div className="about-row">
-              <GenActor teamInfo={play.team}/>
-          </div>
+// rerenders the page whenever the specified play changes.
+  useEffect(()=>{
+    setAlertMessage(null);
+    fetch(PLAY_DATA)
+      .then(response => response.json())
+      .then(function(data) {
+        if (data.status >= 400) {
+          throw new Error("Server responds with error!");
+        }
+        let play =  _.find(data, {viewName: playName}); //find play in data
+        console.log(!play);
+        if (!play) {
+          setAlertMessage('No such play in the gallery!');
+        }
+        setPlayData(play);
+      })
+      .catch(function(err) {
+        setAlertMessage(err.message);
+      })
+  },[playName, setAlertMessage])
+
+// renders the detailed content
+  if (alertMessage === null) {
+    return (
+      <div className="about-body">
+        <div className="about-section">
+          <h1>{playData.name}</h1>
+          <h2>{playData.director}</h2>
+          <a target="_blank" rel="noreferrer noopener" href={playData.link}>
+            <Button variant="contained">
+                Click Here For Entire Show
+            </Button>
+          </a>
         </div>
-      </section>
-    </div>
-  );
+        <h2>Our Team</h2>
+        <div className="about-row">
+            <GenActor teamInfo={playData.team}/>
+        </div>
+      </div>
+    )
+  } else {
+    return (
+      <div className='message'>
+        <div className='error'>
+          <p>{alertMessage}</p>
+        </div>
+      </div>
+    )
+  }
 }
 
 //a helper method that generates actor information needed by play pages.
@@ -58,4 +85,3 @@ function GenActor(props) {
   });
   return actors;
 }
-
