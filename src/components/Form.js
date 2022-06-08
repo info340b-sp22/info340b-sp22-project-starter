@@ -64,7 +64,7 @@ export default function Form() {
 
   return (
     <div className="form">
-      <div><h1>User Registration</h1></div>
+      <div><h2>User Registration</h2></div>
 
       {/* Calling to the methods */}
       <div className="messages">
