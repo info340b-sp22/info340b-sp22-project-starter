@@ -15,17 +15,19 @@ export default function App(props) {
       <header>
         <h1>Chinese Theater Club</h1>
       </header>
-      <Routes>
-        <Route path="/History" element={<History content={props.content}/>} />
-        {/* add routes for all plays pages user can click */}
-        <Route path="/PlayPage" element={<PlayPage />} >
-          <Route path=":playName" element={<PlayDetail />}/>
-          <Route index element={<PlayList plays={props.plays}/>} />
-        </Route>
-        <Route path='/About' element={<About contact={props.contact}/>} />
-        <Route path='/Form' element={<Form />} />
-        <Route path='*' element={<Navigate to="/History" />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/History" element={<History content={props.content}/>} />
+          {/* add routes for all plays pages user can click */}
+          <Route path="/PlayPage" element={<PlayPage />} >
+            <Route path=":playName" element={<PlayDetail />}/>
+            <Route index element={<PlayList plays={props.plays}/>} />
+          </Route>
+          <Route path='/About' element={<About contact={props.contact}/>} />
+          <Route path='/Form' element={<Form />} />
+          <Route path='*' element={<Navigate to="/History" />} />
+        </Routes>
+      </main>
       <footer>&copy; Copyright 2022 Chinese Theater Club</footer>
     </div>
   );
