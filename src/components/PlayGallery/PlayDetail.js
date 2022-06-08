@@ -4,7 +4,7 @@ import _ from 'lodash';
 import Button from '@mui/material/Button';
 import LikeButton from './LikeButton';
 
-const PLAY_DATA = '../../plays.json'
+const PLAY_DATA = '../../playsDetail.json'
 
 //This function fetches data from "plays.json" to generate play page for each play
 export default function Resources() {
