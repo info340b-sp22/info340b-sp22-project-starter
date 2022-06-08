@@ -2,13 +2,22 @@ html {
   box-sizing: border-box;
 }
 
+/*place the header in the center*/
+h1, h2{
+  font-family: Roboto, sans-serif;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  font-weight: 500;
+  color: inherit;
+}
+
 /* headings */
 h1 {
   font-size: 2.25rem;
 }
 
 /* combined selectors */
-
 h1, h2, div form, div #link_Styles, .about-section, .button, div.desc, .plays {
   text-align: center;
 }
@@ -100,16 +109,6 @@ div #link_Styles, .about-section, .button, .plays, .label, .btn, .error{
   font-size: 1.1em;
   margin-left: 0.5em;
   font-weight: 700;
-}
-
-/*place the header in the center*/
-h1, h2{
-  font-family: Roboto, sans-serif;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  line-height: 1.2;
-  font-weight: 500;
-  color: inherit;
 }
 
 /*Nav Bar*/
@@ -381,11 +380,7 @@ footer {
     font-size: larger;
   }
 
-  h1 {
-    font-size: xx-large;
-  }
-
-  h2 {
+  h1, h2 {
     font-size: xx-large;
   }
 
@@ -424,6 +419,6 @@ footer {
 
   /* Make all right containers behave like the left ones */
     .right {
-      left: 0%;
+      left: 0;
     }
   }
