@@ -3,6 +3,7 @@
     "link":"https://www.bilibili.com/video/BV1ZF411g7Dd?spm_id_from=333.337.search-card.all.click" ,
     "img":  "img/cover/dogHeart.jpg", "alt":"Dog Heart play poster",
     "team":[
+
         {"img": "../img/dogHeart/liuxu.jpg", "role": "Professor Philip", "name": "Xu Liu", "email": "Xuliu@uw.com"},
         {"img": "../img/dogHeart/yanqing.jpg", "role": "Sharikov", "name": "Yan Qing", "email": "yanqing@uw.com"},
         {"img": "../img/dogHeart/evan.jpg","role": "Dr. Evan", "name": "Mia Li", "email": "Mia@uw.com" }
