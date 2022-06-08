@@ -37,7 +37,7 @@ export default function Resources() {
 // renders the detailed content
   if (alertMessage === null) {
     return (
-      <div className="about-body">
+      <div className="details">
         <section>
           <h1>{playData.name}</h1>
           <h2>{playData.director}</h2>

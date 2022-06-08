@@ -18,7 +18,7 @@ h1 {
 }
 
 /* combined selectors */
-h1, h2, div form, div #link_Styles, section, .button, div.desc, .plays {
+h1, h2, div form, .nav-link, section, .button, div.desc, .plays {
   text-align: center;
 }
 
@@ -38,15 +38,15 @@ nav, section {
   margin: 0;
 }
 
-div #link_Styles, .column, div.gallery {
+div .nav-link, .column, div.gallery {
   float: left;
 }
 
-div #link_Styles, .label, .btn, .error, .success {
+div .nav-link, .label, .btn, .error, .success {
   display: block;
 }
 
-div #link_Styles, section, .button, .plays, .label, .btn, .error{
+div .nav-link, section, .button, .plays, .label, .btn, .error{
   color: white;
 }
 
@@ -126,7 +126,7 @@ div form {
 }
 
 /*Nav Bar's color*/
-div #link_Styles{
+.nav-link{
   padding: 14px 16px;
   text-decoration: none;
 }
