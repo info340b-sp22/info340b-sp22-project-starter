@@ -38,7 +38,7 @@ export default function Resources() {
   if (alertMessage === null) {
     return (
       <div className="about-body">
-        <div className="about-section">
+        <section>
           <h1>{playData.name}</h1>
           <h2>{playData.director}</h2>
           <a target="_blank" rel="noreferrer noopener" href={playData.link}>
@@ -46,7 +46,7 @@ export default function Resources() {
                 Click Here For Entire Show
             </Button>
           </a>
-        </div>
+        </section>
         <h2>Our Team</h2>
         <div className="about-row">
             <GenActor teamInfo={playData.team}/>

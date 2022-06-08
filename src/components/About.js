@@ -21,8 +21,8 @@ function ContactCard(props) {
 export default function About(props) {
   let contactArr = props.contact.map((ele) => <ContactCard contact={ele} key={ele.name} />);
   return (
-    <section className="about-body">
-      <div className="about-section">
+    <div>
+      <section>
         <h1>Who Are We?</h1>
         <p>- We Establishment at May 2018</p>
         <p>- First Chinese student drama club in the Northwest</p>
@@ -31,12 +31,12 @@ export default function About(props) {
         <p>- We put together at least one big play a year</p>
         <p>- Whether you want to be an actor, director or writer</p>
         <p>- You can shine on our stage</p>
-      </div>
+      </section>
 
       <h2>Our Team</h2>
       <div className="about-row">
         {contactArr}
       </div>
-    </section>
+    </div>
   );
 }

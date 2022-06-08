@@ -18,7 +18,7 @@ h1 {
 }
 
 /* combined selectors */
-h1, h2, div form, div #link_Styles, .about-section, .button, div.desc, .plays {
+h1, h2, div form, div #link_Styles, section, .button, div.desc, .plays {
   text-align: center;
 }
 
@@ -34,7 +34,7 @@ a:hover, .btn, .error {
   cursor: pointer;
 }
 
-nav, .about-section {
+nav, section {
   margin: 0;
 }
 
@@ -46,7 +46,7 @@ div #link_Styles, .label, .btn, .error, .success {
   display: block;
 }
 
-div #link_Styles, .about-section, .button, .plays, .label, .btn, .error{
+div #link_Styles, section, .button, .plays, .label, .btn, .error{
   color: white;
 }
 
@@ -221,8 +221,10 @@ body {
 }
 
 /* About Section*/
-.about-section {
+section {
   font-family: Arial, Helvetica, sans-serif;
+  padding: 50px;
+  background-color: #9A0D06;
 }
 
 /*inherit the page size*/
@@ -240,11 +242,6 @@ body {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
-}
-/*The whole introduction section*/
-.about-section {
-  padding: 50px;
-  background-color: #9A0D06;
 }
 
 /*The whole container*/

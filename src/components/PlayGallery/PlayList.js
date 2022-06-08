@@ -6,7 +6,7 @@ import LikeButton from './LikeButton';
 export default function PlayList(props) {
   const [searchTerm, setSearchTerm] = useState("");
 
-  //a search button user can use to find the play name matching user typed in. 
+  //a search button user can use to find the play name matching user typed in.
   let searchInput =
   <div className="searchInput_Container">
     <input id="searchInput" type="text" placeholder="Search here..." onChange={(event) => {

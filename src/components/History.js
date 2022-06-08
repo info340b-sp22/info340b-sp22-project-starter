@@ -35,11 +35,11 @@ function HistoryCard(props) {
 export default function History(props) {
   let historyArr = props.content.map((ele) => <HistoryCard content={ele} key={ele.date} />);
   return (
-    <section>
+    <div>
       <h2>Club History</h2>
       <div className="timeline">
         {historyArr}
       </div>
-    </section>
+    </div>
   );
 }
