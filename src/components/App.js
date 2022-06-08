@@ -17,7 +17,7 @@ export default function App(props) {
       </header>
       <Routes>
         <Route path="/History" element={<History content={props.content}/>} />
-        {/* add routes for all plays pages use can click */}
+        {/* add routes for all plays pages user can click */}
         <Route path="/PlayPage" element={<PlayPage />} >
           <Route path=":playName" element={<PlayDetail />}/>
           <Route index element={<PlayList plays={props.plays}/>} />
