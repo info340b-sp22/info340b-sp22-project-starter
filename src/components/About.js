@@ -23,7 +23,7 @@ export default function About(props) {
   return (
     <div>
       <section>
-        <h1>Who Are We?</h1>
+        <h2>Who Are We?</h2>
         <p>- We Establishment at May 2018</p>
         <p>- First Chinese student drama club in the Northwest</p>
         <p>- We regularly hold Workshops</p>
@@ -33,7 +33,7 @@ export default function About(props) {
         <p>- You can shine on our stage</p>
       </section>
 
-      <h2>Our Team</h2>
+      <h3>Our Team</h3>
       <div className="about-row">
         {contactArr}
       </div>
