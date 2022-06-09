@@ -62,7 +62,7 @@ div .nav-link, section, .button, .plays, .label, .btn, .error{
   bottom: 0;
 }
 
-.timeline::after, .right, .labelName, .inputName, .labelEmail, .inputEmail, .labelID, .inputID, .btn {
+.timeline::after, .right, .labelName, .inputName, .labelEmail, .inputEmail, .labelID, .inputID, .btn, .nxt-btn {
   left: 50%;
 }
 
@@ -328,6 +328,8 @@ footer {
   top: 35%;
 }
 
+
+
 .inputName {
   size: 100cm;
   top: 40%;
@@ -355,6 +357,11 @@ footer {
   top: 65%;
 }
 
+/* user login btn */
+.nxt-btn {
+  top: 75%;
+}
+
 .messages{
   display: flex;
   justify-content: center;
@@ -365,8 +372,6 @@ footer {
   color: black;
 }
 
-
-
 @media screen and (max-width: 324px) {
   body {
     visibility: hidden;
@@ -374,7 +379,7 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  p, a {
+  p, a, #searchInput {
     font-size: larger;
   }
 

@@ -1,6 +1,5 @@
-import { root } from 'cheerio/lib/static';
 import { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 
 export default function Form() {
 
@@ -39,7 +38,6 @@ export default function Form() {
     } else {
       setSubmitted(true);
       setError(false);
-      window.open('./PlayingPage',"_self");
     }
   };
 
@@ -51,6 +49,9 @@ export default function Form() {
       className="success"
       style={{display: submitted ? '' : 'none'}}>
       <h1>User {name} successfully registered!!</h1>
+      <Link to= {"/UserLogin/" + name}>
+          <button className="btn nxt-btn">Continue</button>
+      </Link>
     </div>
   );
   };
@@ -68,8 +69,6 @@ export default function Form() {
 
   return (
     <div className="form">
-      <div><h1>User Information</h1></div>
-
       {/* Calling to the methods */}
       <div className="messages">
         {errorMessage()}
@@ -90,9 +89,7 @@ export default function Form() {
         <input onChange={handleID} className="inputID"
         value={ID} type="Hysky ID" />
 
-        <button onClick={handleSubmit} className="btn" type="submit">
-        Continue
-        </button>
+        <button onClick={handleSubmit} className="btn" type="submit">Sign up/Log in</button>
       </form>
     </div>
   );

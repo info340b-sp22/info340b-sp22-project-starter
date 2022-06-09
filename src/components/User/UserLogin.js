@@ -1,10 +1,10 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 
-export default function PlayPage(props) {
+export default function UserLogin(props) {
   return (
     <div>
-      <h2>Check out our current plays and buy tickets!</h2>
+      <h2>Checks out our future performance schedule!</h2>
       <Outlet />
     </div>
   )

@@ -10,11 +10,13 @@ const PLAY_DATA = '/playsDetail.json'
 export default function Resources() {
   const [playData, setPlayData] = useState({'viewName': '', 'team':[]}); //tracks to show
   const [alertMessage, setAlertMessage] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const { playName } = useParams();
 
 // rerenders the page whenever the specified play changes.
   useEffect(()=>{
+    setLoading(true);
     setAlertMessage(null);
     fetch(PLAY_DATA)
       .then(response => response.json())
@@ -32,12 +34,14 @@ export default function Resources() {
       .catch(function(err) {
         setAlertMessage(err.message);
       })
+      .then(() => setLoading(false))
   },[playName, setAlertMessage])
 
 // renders the detailed content
   if (alertMessage === null) {
     return (
       <div className="details">
+        {loading && <p>loading...</p>}
         <section>
           <h1>{playData.name}</h1>
           <h2>{playData.director}</h2>

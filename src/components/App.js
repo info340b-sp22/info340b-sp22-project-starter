@@ -5,14 +5,12 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import History from './History';
 import NavBar from './Navigation';
 import About from './About';
-import Form from './Form';
+import Form from './User/Form';
 import PlayList from './PlayGallery/PlayList';
 import PlayDetail from './PlayGallery/PlayDetail';
 import PlayPage from './PlayGallery/PlayPage';
-import PlayingDetail from './PlayingNow/PlayingDetail';
-import PlayingList from './PlayingNow/PlayingList';
-import PlayingPage from './PlayingNow/PlayingPage';
-
+import UserPage from './User/UserPage';
+import UserLogin from './User/UserLogin'
 
 
 export default function App(props) {
@@ -31,12 +29,14 @@ export default function App(props) {
           <Route index element={<PlayList plays={props.plays}/>} />
         </Route>
         <Route path='/About' element={<About contact={props.contact}/>} />
-        <Route path='/Form' element={<Form />} />
-        <Route path='*' element={<Navigate to="/History" />} />
-        <Route path="/PlayingPage" element={<PlayingPage />} >
-          <Route path=":playName" element={<PlayingDetail />}/>
-          <Route index element={<PlayingList plays={props.playing}/>} />
+        <Route path="/UserLogin" element={<UserLogin />} >
+          <Route path=":userName" element={<UserPage futurePlays={props.futurePlays}/>}/>
+          <Route index element={<Form />} />
         </Route>
+        {/* <Route path='/Form' element={<Form />} >
+          <Route path=":userName" element={<UserPage />}/>
+        </Route> */}
+        <Route path='*' element={<Navigate to="/History" />} />
       </Routes>
       <footer>&copy; Copyright 2022 Chinese Theater Club</footer>
     </div>
