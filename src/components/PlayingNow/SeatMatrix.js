@@ -1,6 +1,7 @@
 import React from "react"
 import Seat from './Seat'
-import './styles/Seat.css'
+import './seating.css'
+
 
 const GenerateSeats = (seatNumbers) => {
 	return (
@@ -17,7 +18,7 @@ const GenerateSeats = (seatNumbers) => {
 const SeatMatrix = () => {
 	return (
 		<div className="movie-complex">
-			<p>STAGE</p>
+			<p>Screen This way!</p>
 			<div className="container row movie-layout">
 				<div className="movie-column-1">
 					{GenerateSeats([1,2,3,4])}

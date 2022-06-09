@@ -1,7 +1,7 @@
 import React, {useContext} from 'react'
-import MovieContext from "../contexts/MovieContext"
+import {MovieContext} from "./PlayingDetail"
 
-import './styles/Seat.css'
+import './seating.css'
 
 const Seat = (props) => {
     const { movies } = useContext(MovieContext)
@@ -25,7 +25,7 @@ const Seat = (props) => {
             seatColor.add("seat-black")
             context.changeState({...movies, seatNumbers: [...movies.seatNumbers, seatNumber], totalSeats: movies.totalSeats+1 })
         }
-    }
+     }
 
     return (
         <div className="col-2 col-md-2">
