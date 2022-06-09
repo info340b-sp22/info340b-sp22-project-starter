@@ -1,11 +1,13 @@
+import { root } from 'cheerio/lib/static';
 import { useState } from 'react';
+
 
 export default function Form() {
 
   // States for registration
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [ID, setID] = useState('');
 
   // States for checking the errors
   const [submitted, setSubmitted] = useState(false);
@@ -24,21 +26,23 @@ export default function Form() {
   };
 
   // Handling the password change
-  const handlePassword = (e) => {
-    setPassword(e.target.value);
+  const handleID = (e) => {
+    setID(e.target.value);
     setSubmitted(false);
   };
 
   // Handling the form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (name === '' || email === '' || password === '') {
+    if (name === '' || email === '') {
       setError(true);
     } else {
       setSubmitted(true);
       setError(false);
+      window.open('./PlayingPage',"_self");
     }
   };
+
 
 // Showing success message
   const successMessage = () => {
@@ -64,7 +68,7 @@ export default function Form() {
 
   return (
     <div className="form">
-      <div><h2>User Registration</h2></div>
+      <div><h1>User Information</h1></div>
 
       {/* Calling to the methods */}
       <div className="messages">
@@ -82,12 +86,12 @@ export default function Form() {
         <input onChange={handleEmail} className="inputEmail"
         value={email} type="email" />
 
-        <label className="labelPassword">Password</label>
-        <input onChange={handlePassword} className="inputPassword"
-        value={password} type="password" />
+        <label className="labelID">Hysky ID(Optional)</label>
+        <input onChange={handleID} className="inputID"
+        value={ID} type="Hysky ID" />
 
         <button onClick={handleSubmit} className="btn" type="submit">
-        Submit
+        Continue
         </button>
       </form>
     </div>

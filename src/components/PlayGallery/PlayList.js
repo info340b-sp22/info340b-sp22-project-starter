@@ -1,6 +1,6 @@
 import React, {useState} from 'react'; //import React Component
 import { Link } from 'react-router-dom';
-import LikeButton from './LikeButton';
+import LikeButton from '../LikeButton';
 
 // a function that generate the playgallery page by reading plays.json file.
 export default function PlayList(props) {

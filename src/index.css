@@ -62,7 +62,7 @@ div .nav-link, section, .button, .plays, .label, .btn, .error{
   bottom: 0;
 }
 
-.timeline::after, .right, .labelName, .inputName, .labelEmail, .inputEmail, .labelPassword, .inputPassword, .btn {
+.timeline::after, .right, .labelName, .inputName, .labelEmail, .inputEmail, .labelID, .inputID, .btn {
   left: 50%;
 }
 
@@ -78,7 +78,7 @@ div .nav-link, section, .button, .plays, .label, .btn, .error{
   border: medium solid white;
 }
 
-.labelName, .inputName, .labelEmail, .inputEmail, .labelPassword, .inputPassword, .btn {
+.labelName, .inputName, .labelEmail, .inputEmail, .labelID, .inputID, .btn {
   position: fixed;
   transform: translate(-50%, -50%);
   margin: auto;
@@ -341,11 +341,11 @@ footer {
   top: 50%;
 }
 
-.labelPassword {
+.labelID {
   top: 55%;
 }
 
-.inputPassword {
+.inputID {
   top: 60%;
 }
 
