@@ -26,7 +26,7 @@ h1, h2, h3, div form, .nav-link, section, .button, div.desc, .plays {
   width: 100%;
 }
 
-a:hover, .btn, .error {
+a:hover, button, .error {
   background-color: #9A0D06;
 }
 
