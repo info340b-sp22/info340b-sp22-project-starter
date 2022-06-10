@@ -1,5 +1,5 @@
 [
-  {"name": "Fiona", "motto": "Cease to struggle and you cease to live.", "title": "President", "img": "img/about/clubowner.jpg", "email": "Fiona@example.com"},
-  {"name": "Elvi", "motto": "The only impossible journey is the one that you haven't started yet.", "title": "Art Director", "img": "img/about/finalcialdepartment.jpg", "email": "Elvi@example.com"},
-  {"name": "Yuke", "motto": "Live a noble and honest life. Reviving past times in your old age will help you to enjoy your life again.", "title": "Media Director", "img": "img/about/mediadepartment.jpg", "email": "Yuke@example.com"}
+  {"name": "Fiona", "motto": "Cease to struggle and you cease to live.", "title": "President", "img": "img/about/clubowner.jpg", "email": "Fiona@uw.edu"},
+  {"name": "Elvi", "motto": "The only impossible journey is the one that you haven't started yet.", "title": "Art Director", "img": "img/about/finalcialdepartment.jpg", "email": "Elvi@uw.edu"},
+  {"name": "Yuke", "motto": "Live a noble and honest life. Reviving past times in your old age will help you to enjoy your life again.", "title": "Media Director", "img": "img/about/mediadepartment.jpg", "email": "Yuke@uw.edu"}
 ]
