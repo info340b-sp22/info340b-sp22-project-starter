@@ -129,11 +129,8 @@ nav {
 
 /*search bar*/
 div form {
-  /* float: right; */
-  display: flex;
+  float: right;
   padding: 12px 12px;
-  /* height: 500px; */
-  /* width: 500px */
 }
 
 /*Nav Bar's color*/
@@ -374,27 +371,17 @@ footer {
 .messages{
   display: flex;
   justify-content: center;
-  /* margin-top: 90%; */
-  position:fixed;
-  left: 5px;
-
 }
 
 .success{
-  margin: 20%;
   background-color: lightblue;
   color: black;
-  margin-top: inherit;
 }
 
 /* alert */
 .loginAlert {
   background-color: #490909;
   color: white;
-}
-
-.flex-container {
-  display: block;
 }
 
 @media screen and (max-width: 324px) {
