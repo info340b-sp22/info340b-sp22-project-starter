@@ -35,9 +35,17 @@ export default function Form() {
     e.preventDefault();
     if (name === '' || email === '') {
       setError(true);
+      setTimeout(function(){ //using setTimeout function
+        window.document.getElementById('errMsg').style.setProperty("display",'none');
+      }
+      ,1000); 
     } else {
       setSubmitted(true);
       setError(false);
+      setTimeout(function(){ //using setTimeout function
+        window.document.getElementById('sucMsg').style.setProperty("display",'none');
+      }
+      ,1000); 
     }
   };
 
@@ -45,10 +53,10 @@ export default function Form() {
 // Showing success message
   const successMessage = () => {
   return (
-    <div
+    <div 
       className="success"
       style={{display: submitted ? '' : 'none'}}>
-      <h1>User {name} successfully registered!!</h1>
+      <h1 id='sucMsg'>User {name} successfully registered!!</h1>
       <Link to= {"/UserLogin/" + name}>
           <button className="btn nxt-btn">Continue</button>
       </Link>
@@ -62,7 +70,7 @@ export default function Form() {
       <div
         className="error"
         style={{display: error ? '' : 'none'}}>
-        <h1>Please enter all the fields</h1>
+        <h1 id='errMsg'>Please enter all the fields</h1>
       </div>
     );
   };
@@ -70,12 +78,7 @@ export default function Form() {
   return (
     <div className="form">
       {/* Calling to the methods */}
-      <div className="messages">
-        {errorMessage()}
-        {successMessage()}
-      </div>
-
-      <form>
+      <form className='flex-container'>
         {/* Labels and inputs for form data */}
         <label className="labelName">Name</label>
         <input onChange={handleName} className="inputName"
@@ -91,6 +94,10 @@ export default function Form() {
 
         <button onClick={handleSubmit} className="btn" type="submit">Sign up/Log in</button>
       </form>
+        <div className="messages" id='msg'>
+          {errorMessage()}
+          {successMessage()}
+        </div>
     </div>
   );
 }
