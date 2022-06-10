@@ -47,7 +47,7 @@ function GenButton(props) {
     <div className="gallery">
       <Link to= {"/PlayPage/" + viewName}>
         <img src={img} alt={alt}/>
-        <p>{name}</p>
+        <h3>{name}</h3>
       </Link>
       <div>
         <LikeButton/>
