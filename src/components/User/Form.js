@@ -77,19 +77,27 @@ export default function Form() {
 
       <form>
         {/* Labels and inputs for form data */}
-        <label className="labelName">Name</label>
-        <input onChange={handleName} className="inputName"
-        value={name} type="text" />
+        <ul className='flex-container'>
+          <li>
+            <label className="labelName">Name</label>
+            <input onChange={handleName} className="inputName"
+            value={name} type="text" />
+          </li>
 
-        <label className="labelEmail">Email</label>
-        <input onChange={handleEmail} className="inputEmail"
-        value={email} type="email" />
+          <li>
+            <label className="labelEmail">Email</label>
+            <input onChange={handleEmail} className="inputEmail"
+            value={email} type="email" />
+          </li>
 
-        <label className="labelID">Hysky ID(Optional)</label>
-        <input onChange={handleID} className="inputID"
-        value={ID} type="Hysky ID" />
+          <li>
+            <label className="labelID">Student#</label>
+            <input onChange={handleID} className="inputID"
+            value={ID} type="Hysky ID" />
+          </li>
 
-        <button onClick={handleSubmit} className="btn" type="submit">Sign up/Log in</button>
+          <button onClick={handleSubmit} className="btn" type="submit">Sign up/Log in</button>
+        </ul>
       </form>
     </div>
   );

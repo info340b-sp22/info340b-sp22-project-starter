@@ -70,7 +70,7 @@ div .nav-link, section, .button, .plays, .label, .btn, .error{
   bottom: 0;
 }
 
-.timeline::after, .right, .labelName, .inputName, .labelEmail, .inputEmail, .labelID, .inputID, .btn, .nxt-btn {
+.timeline::after, .right{
   left: 50%;
 }
 
@@ -84,12 +84,6 @@ div .nav-link, section, .button, .plays, .label, .btn, .error{
   top: 22px;
   width: 0;
   border: medium solid white;
-}
-
-.labelName, .inputName, .labelEmail, .inputEmail, .labelID, .inputID, .btn {
-  position: fixed;
-  transform: translate(-50%, -50%);
-  margin: auto;
 }
 
 .btn, .label {
@@ -111,7 +105,6 @@ div .nav-link, section, .button, .plays, .label, .btn, .error{
 }
 
 .read-or-hide {
-  /* color: rgb(114, 45, 45); */
   color: #ffffff;
   background-color: rgb(114, 45, 45);
   font-size: 1.1em;
@@ -125,12 +118,6 @@ nav {
   padding: 0;
   overflow: hidden;
   background-color: #490909;
-}
-
-/*search bar*/
-div form {
-  float: right;
-  padding: 12px 12px;
 }
 
 /*Nav Bar's color*/
@@ -331,41 +318,25 @@ footer {
   box-shadow: 0 0 10px #22303f8c;
 }
 
-/*signUp*/
-.labelName {
-  top: 35%;
-}
+/* signUp */
 
-.inputName {
+.inputName, .inputEmail, .inputID {
   size: 100cm;
-  top: 40%;
 }
 
-.labelEmail {
-  top: 45%;
-}
-
-.inputEmail {
-  top: 50%;
-}
-
-.labelID {
-  top: 55%;
-}
-
-.inputID {
-  top: 60%;
-}
-
-.btn {
+.btn, .btn-nxt {
   border-radius: 5px;
   margin: 10px auto;
-  top: 65%;
 }
 
-/* user login btn */
-.nxt-btn {
-  top: 75%;
+.flex-container {
+  margin-top: 5em;
+}
+
+.flex-container li{
+  display: flex;
+  justify-content: center;
+  padding: .5em;
 }
 
 .messages{
