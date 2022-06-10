@@ -15,7 +15,7 @@ export default function About(props) {
         <p>- You can shine on our stage</p>
       </section>
 
-      <h3>Our Team</h3>
+      <h2>Our Team</h2>
       <div className="about-row">
         {contactArr}
       </div>
@@ -30,7 +30,7 @@ function ContactCard(props) {
       <div className="card">
         <img src={img} alt={name} />
         <div className="about-container">
-          <h2>{name}</h2>
+          <h3>{name}</h3>
           <p className="title">{title}</p>
           <p>{motto}</p>
           <p>{email}</p>

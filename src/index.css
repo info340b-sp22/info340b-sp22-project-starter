@@ -17,6 +17,14 @@ h1 {
   font-size: 2.25rem;
 }
 
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
 /* combined selectors */
 h1, h2, h3, div form, .nav-link, section, .button, div.desc, .plays {
   text-align: center;
@@ -328,8 +336,6 @@ footer {
   top: 35%;
 }
 
-
-
 .inputName {
   size: 100cm;
   top: 40%;
@@ -372,6 +378,12 @@ footer {
   color: black;
 }
 
+/* alert */
+.loginAlert {
+  background-color: #490909;
+  color: white;
+}
+
 @media screen and (max-width: 324px) {
   body {
     visibility: hidden;
@@ -383,7 +395,7 @@ footer {
     font-size: larger;
   }
 
-  h1, h2 {
+  h1, h2, h3 {
     font-size: xx-large;
   }
 

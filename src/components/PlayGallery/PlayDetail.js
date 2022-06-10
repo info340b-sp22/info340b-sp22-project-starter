@@ -77,7 +77,7 @@ function GenActor(props) {
         <div className="card" >
           <img src={img} alt={name}/>
           <div className="about-container">
-            <h2>{role}</h2>
+            <h3>{role}</h3>
             <p className="title">Featured by</p>
             <p>{name}</p>
             <p>{email}</p>

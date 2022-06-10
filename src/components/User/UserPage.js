@@ -1,6 +1,5 @@
 import { useParams } from 'react-router';
 import React, { useState } from 'react';
-import { Alert } from 'react-bootstrap';
 
 export default function UserPage(props) {
   const [msg, setMsg] = useState(null);
@@ -14,7 +13,7 @@ export default function UserPage(props) {
   return (
     <div>
       <h3>Welcome! User {userName}</h3>
-        <div className="alert alert-danger alert-dismissible fade show" role="alert">
+        <div className="alert loginAlert" role="alert">
           {msg}
         </div>
       {plays}
